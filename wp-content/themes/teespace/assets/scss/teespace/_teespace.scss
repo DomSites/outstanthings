@@ -1,0 +1,27 @@
+// TeeSpace
+// Home 1
+.section-bg-decor-1 {
+  margin-top: -58vh!important;
+}
+
+
+.designer-spacer {
+  margin-bottom: 40px;
+
+  @media screen and (max-width: $screen-lg-max) {
+    margin-bottom: 35px;
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    margin-bottom: 20px;
+  }
+}
+

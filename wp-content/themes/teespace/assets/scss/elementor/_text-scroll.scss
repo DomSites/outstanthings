@@ -1,0 +1,239 @@
+$root: '.haru-text-scroll';
+
+#{$root} {
+  &:not(.flickity-enabled) {
+    display: flex;
+  }
+
+  .text-scroll-content {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+
+  .text-scroll-item {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  &--style-1 {
+    .text-scroll-item {
+      padding: 0 1.25vw;
+
+      // @include bggradient3();
+
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+
+      // @media not all and (min-resolution:.001dpcm) { 
+      //   @supports (-webkit-appearance:none) {
+      //     display: inline-block;
+      //   }
+      // }
+
+      @media screen and(max-width: $screen-xs-max) {
+        padding: 0 2.5vw;
+      }
+
+      h6 {
+        display: flex;
+        align-items: center;
+        font-size: 72px;
+        font-weight: $fw-normal - 100;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+
+        @include bggradient3();
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media not all and (min-resolution:.001dpcm) { 
+          @supports (-webkit-appearance:none) {
+            display: inline-block;
+          }
+        }
+
+        @media screen and(max-width: $screen-lg-max) {
+          font-size: 64px;
+        }
+
+        @media screen and(max-width: $screen-md-max) {
+          font-size: 56px;
+        }
+
+        @media screen and(max-width: $screen-sm-max) {
+          font-size: 48px;
+        }
+
+        @media screen and(max-width: $screen-xs-max) {
+          font-size: 32px;
+        }
+
+        &:after {
+          content: '*';
+          display: inline-block;
+          font-weight: $fw-normal - 100;
+          font-size: 90px;
+          margin-left: 2.5vw;
+          line-height: 1;
+          transform: translateY(12px);
+
+          @include bggradient3();
+
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          @media screen and(max-width: $screen-lg-max) {
+            font-size: 80px;
+          }
+
+          @media screen and(max-width: $screen-md-max) {
+            font-size: 70px;
+          }
+
+          @media screen and(max-width: $screen-sm-max) {
+            font-size: 60px;
+          }
+
+          @media screen and(max-width: $screen-xs-max) {
+            font-size: 40px;
+            margin-left: 5vw;
+          }
+        }
+      }
+    }
+  }
+
+  &--style-2 {
+    .text-scroll-item {
+      padding: 0 .8vw;
+
+      @media screen and(max-width: $screen-xs-max) {
+        padding: 0 1.6vw;
+      }
+
+      h6 {
+        display: flex;
+        align-items: center;
+        color: $cl-secondary;
+        font-size: $fs-base;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+
+        @media screen and(max-width: $screen-lg-max) {
+         
+        }
+
+        @media screen and(max-width: $screen-md-max) {
+          
+        }
+
+        @media screen and(max-width: $screen-sm-max) {
+          
+        }
+
+        @media screen and(max-width: $screen-xs-max) {
+          font-size: $fs-14;
+        }
+
+        a {
+          color: $cl-secondary;
+        }
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          margin-left: 1.6vw;
+          border-radius: 50%;
+          background-color: $cl-secondary;
+
+          @media screen and(max-width: $screen-lg-max) {
+            
+          }
+
+          @media screen and(max-width: $screen-md-max) {
+           
+          }
+
+          @media screen and(max-width: $screen-sm-max) {
+          
+          }
+
+          @media screen and(max-width: $screen-xs-max) {
+            margin-left: 3.2vw;
+          }
+        }
+      }
+    }
+  }
+
+  &--style-3 {
+    .text-scroll-item {
+      padding: 0 1.5vw;
+
+      @media screen and(max-width: $screen-xs-max) {
+        padding: 0 3vw;
+      }
+
+      h6 {
+        display: flex;
+        align-items: center;
+        font-size: 132px;
+        font-weight: $fw-extra-bold;
+
+        @include bggradient31();
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media not all and (min-resolution:.001dpcm) { 
+          @supports (-webkit-appearance:none) {
+            display: inline-block;
+          }
+        }
+
+        @media screen and(max-width: $screen-lg-max) {
+          font-size: 64px;
+        }
+
+        @media screen and(max-width: $screen-md-max) {
+          font-size: 56px;
+        }
+
+        @media screen and(max-width: $screen-sm-max) {
+          font-size: 48px;
+        }
+
+        @media screen and(max-width: $screen-xs-max) {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+.elementor-editor-active {
+  #{$root} {
+    display: flex;
+  }
+}
+
+#{$dark-mode},
+#{$background-dark} {
+  #{$root} {
+    &--style-1 {
+      border-bottom: 1px solid $cl-border-dark;
+
+      .text-scroll-item {
+        &:before {
+          background-color: $cl-white-dark;
+        }
+      }
+    }
+  }
+}

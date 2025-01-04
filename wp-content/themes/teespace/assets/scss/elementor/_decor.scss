@@ -1,0 +1,96 @@
+$root: '.haru-decor';
+
+#{$root} {
+  &--style-1 {
+    #{$root}__content {
+
+    }
+
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+
+      &--gradient {
+        background: linear-gradient(225.78deg, $cl-primary 23.8%, rgba($cl-primary, 0.403383) 92.87%);
+      }
+    }
+  }
+
+  &--style-2 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+
+      &--gradient-2 {
+        background: linear-gradient(188.64deg, rgba(238, 194, 253, 0.89) 19.22%, rgba(170, 254, 234, 0.403383) 71.44%, rgba(216, 170, 198, 0) 83.67%);
+      }
+    }
+  }
+
+  &--style-3 {
+    #{$root}__ellipse {
+      padding-bottom: 77%;
+      border-radius: 50%;
+
+      &--blur {
+        background: $cl-primary;
+        filter: blur(150px)!important;
+      }
+    }
+  }
+
+  &--style-4 {
+    #{$root}__dotted {
+      padding-bottom: 100%;
+      background: transparent;
+      background-size: 28px 28px!important;
+      background-position: -5px -5px;
+    }
+  }
+
+  &--style-5 {
+    #{$root}__circle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+      position: relative;
+
+      &:before {
+        content: '';
+        border-radius: 50%;
+        border: 2px solid $cl-border;
+        position: absolute;
+        width: 75%;
+        height: 75%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:after {
+        content: '';
+        border-radius: 50%;
+        border: 2px solid $cl-border;
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &--layered {
+        border: 2px solid $cl-border;
+      }
+    }
+  }
+}
+
+#{$dark-mode},
+#{$background-dark} {
+  #{$root} {
+    &--style-1 {
+      
+    }
+  }
+}
+

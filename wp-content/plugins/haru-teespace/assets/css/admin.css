@@ -1,0 +1,47 @@
+.haru-notice {
+  background-color: #f8d7da;
+  color: #721c24;
+  text-align: center;
+}
+
+.block-editor-writing-flow .block-editor-block-list__layout select {
+	appearance: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNiYmIiPjxwYXRoIGQ9Ik02IDlsNiA2IDYtNiIvPjwvc3ZnPg==);
+  background-position: right 10px top 50%;
+  background-size: auto 18px;
+  background-repeat: no-repeat;
+  padding: 0 15px;
+  padding-right: 30px;
+}
+
+.block-editor-page.widgets-php .select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: solid #757575 1px!important;
+}
+
+.block-editor-page.widgets-php .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: var(--wp-admin-theme-color)!important;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 8px 3px 6px!important;
+  border: none!important;
+}
+
+.block-editor-page.widgets-php .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #fff!important;
+  position: relative;
+  top: -1px;
+}
+
+.block-editor-page.widgets-php .select2-container .select2-search--inline {
+  margin-top: 2px;
+}
+
+.block-editor-page.widgets-php .select2-container .select2-search--inline input {
+  min-width: 100px;
+}
+
+.block-editor-page.widgets-php .select2-container--default .select2-selection--multiple .select2-selection__clear {
+  margin-top: 8px!important;
+}

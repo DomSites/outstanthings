@@ -1,0 +1,123 @@
+// Paging css similar haru-page-links
+.archive-pagination {
+  // Default
+  .page-numbers {
+    display: inline-block;
+    padding: 0 10px;
+    color: $cl-black;
+    // margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-weight: $fw-bold;
+    transition: all .3s;
+
+    @media screen and (max-width: $screen-lg-max) {
+      width: 38px;
+      height: 38px;
+      line-height: 38px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+    }
+
+    &.current {
+      background-color: $cl-black;
+      box-shadow: 0 0 10px rgba($cl-black, .1);
+      color: $cl-white;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    &:hover, 
+    &:focus {
+      color: $cl-primary;
+    }
+
+    &.prev, 
+    &.next {
+      width: auto;
+      text-transform: capitalize;
+    }
+
+    &.prev {
+      &:before {
+        content: '\e918';
+        font-family: 'phosphor';
+        font-size: $fs-base - 3px;
+        margin-right: 6px;
+        position: relative;
+        bottom: -1px;
+      }
+    }
+
+    &.next {
+      &:after {
+        content: '\e919';
+        font-family: 'phosphor';
+        font-size: $fs-base - 3px;
+        margin-left: 6px;
+        position: relative;
+        bottom: -1px;
+      }
+    }
+  }
+
+  // Load more
+  &.load-more {
+
+  }
+}
+
+// Dark Mode
+.dark-mode {
+  // Paging css similar haru-page-links
+  .archive-pagination {
+    // Default
+    .page-numbers {
+      color: $cl-white-dark;
+
+      &.current {
+        background-color: $cl-white-dark;
+        box-shadow: 0 0 10px rgba($cl-white-dark, .1);
+        color: $cl-black;
+      }
+    }
+
+    a {
+      &:hover, 
+      &:focus {
+        color: $cl-primary;
+      }
+    }
+
+    // Load more
+    &.load-more {
+
+    }
+  }
+}

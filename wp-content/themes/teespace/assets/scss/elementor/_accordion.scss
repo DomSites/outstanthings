@@ -1,0 +1,513 @@
+$root: '.haru-accordion';
+
+#{$root} {
+  position: relative;
+
+  &--style-1 {
+    .haru-accordion-item {
+      padding-bottom: 30px;
+
+      @media screen and (max-width: $screen-lg-max) {
+        padding-bottom: 25px;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        padding-bottom: 20px;
+      }
+    }
+
+    .haru-tab-title {
+      line-height: 1.2;
+      padding: 22px 20px;
+      background-color: $cl-gray-3;
+      border-radius: $border-radius;
+
+      @media screen and (max-width: $screen-lg-max) {
+        padding: 18px 18px;
+      }
+
+      .haru-accordion-icon-opened {
+        display: none;
+      }
+
+      &.active {
+        background-color: $cl-primary;
+        box-shadow: 0 0 30px rgba($cl-black, .04);
+
+        .haru-accordion-title {
+          color: $cl-white;
+        }
+
+        .haru-accordion-icon {
+          i {
+            color: $cl-white;
+          }
+        }
+
+        .haru-accordion-icon-closed {
+          display: none;
+        }
+
+        .haru-accordion-icon-opened {
+          display: inline-block;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .haru-accordion-title {
+      font-size: 20px;
+      color: $cl-black;
+      font-weight: $fw-bold;
+
+      @media screen and (max-width: $screen-lg-max) {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $screen-sm-max) {
+        // font-size: 17px;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        // font-size: 16px;
+      }
+    }
+
+    .haru-accordion-icon {
+      width: 1.5em;
+      display: inline-block;
+      margin-top: 2px;
+
+      @media screen and (max-width: $screen-lg-max) {
+        margin-top: 0;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        margin-top: -1px;
+      }
+
+      i {
+        font-weight: $fw-bold;
+        font-size: 16px;
+        color: $cl-black;
+      }
+
+      &.haru-accordion-icon-right {
+        float: right;
+        text-align: right;
+      }
+
+      &.haru-accordion-icon-left {
+        float: left;
+        text-align: left;
+      }
+    }
+
+    .haru-tab-content {
+      padding: 20px 20px 0 20px;
+      font-size: 16px;
+
+      @media screen and (max-width: $screen-md-max) {
+        font-size: $fs-base;
+      }
+    }
+  }
+
+  &--style-2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    .haru-accordion-list {
+      flex: 0 0 35%;
+
+      @media screen and (max-width: $screen-xs-max) {
+        flex: 0 0 100%;
+      }
+    }
+
+    .haru-accordion-item {
+      margin-bottom: 20px;
+
+      @media screen and (max-width: $screen-sm-max) {
+        margin-bottom: 0;
+      }
+
+      &.active {
+        background: $cl-white;
+        box-shadow: 0 15px 50px rgba($cl-black, .08);
+        border-radius: $border-radius;
+      }
+    }
+
+    .haru-tab-title {
+      line-height: 1.4;
+      padding: 30px 30px 15px 30px;
+      border-radius: $border-radius;
+
+      @media screen and (max-width: $screen-lg-max) {
+        padding: 20px 18px 15px;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+
+      }
+
+      .haru-accordion-icon-opened {
+        display: none;
+      }
+
+      &.active {
+        .haru-accordion-icon-closed {
+          display: none;
+        }
+
+        .haru-accordion-icon-opened {
+          display: inline-block;
+        }
+
+        .haru-accordion-title {
+          // color: $cl-white;
+        }
+
+        .haru-accordion-icon {
+          i {
+            // color: $cl-white;
+          }
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .haru-accordion-title {
+      font-size: 20px;
+      color: $cl-black;
+      font-weight: $fw-bold;
+
+      @media screen and (max-width: $screen-lg-max) {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $screen-sm-max) {
+        // font-size: 17px;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        // font-size: 16px;
+      }
+    }
+
+    .haru-accordion-icon {
+      width: 1.5em;
+      display: inline-block;
+      margin-top: 2px;
+
+      @media screen and (max-width: $screen-lg-max) {
+        margin-top: 0;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        margin-top: -1px;
+      }
+
+      i {
+        font-weight: $fw-bold;
+        font-size: 16px;
+        color: $cl-black;
+      }
+
+      &.haru-accordion-icon-right {
+        float: right;
+        text-align: right;
+      }
+
+      &.haru-accordion-icon-left {
+        float: left;
+        text-align: left;
+      }
+    }
+
+    .haru-tab-content {
+      padding: 0 30px 15px 30px;
+      font-size: 16px;
+
+      @media screen and (max-width: $screen-lg-max) {
+        padding: 0 20px 15px 20px;
+        font-size: $fs-base;
+      }
+    }
+
+    .haru-accordion-images {
+      flex: 0 0 65%;
+
+      @media screen and (max-width: $screen-md-max) {
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        flex: 0 0 100%;
+      }
+
+      .haru-accordion-image {
+        display: none;
+
+        &.active {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+
+  &--style-3 {
+    .haru-accordion-item {
+      padding-bottom: 30px;
+
+      @media screen and (max-width: $screen-lg-max) {
+        padding-bottom: 25px;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        padding-bottom: 20px;
+      }
+    }
+
+    .haru-tab-title {
+      line-height: 1.4;
+      padding: 20px 20px;
+      border-radius: $border-radius;
+      background-color: $cl-white;
+
+      @media screen and (max-width: $screen-lg-max) {
+        padding: 18px 18px;
+      }
+
+      .haru-accordion-icon-opened {
+        display: none;
+      }
+
+      &.active {
+        background-color: $cl-primary;
+        box-shadow: 0 7px 30px rgba($cl-black, .13);
+
+        .haru-accordion-title {
+          color: $cl-white;
+        }
+
+        .haru-accordion-icon {
+          i {
+            color: $cl-white;
+          }
+        }
+
+        .haru-accordion-icon-closed {
+          display: none;
+        }
+
+        .haru-accordion-icon-opened {
+          display: inline-block;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .haru-accordion-title {
+      font-size: 20px;
+      color: $cl-black;
+      font-weight: $fw-bold;
+
+      @media screen and (max-width: $screen-lg-max) {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $screen-sm-max) {
+        // font-size: 17px;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        // font-size: 16px;
+      }
+    }
+
+    .haru-accordion-icon {
+      width: 1.5em;
+      display: inline-block;
+      margin-top: 2px;
+
+      @media screen and (max-width: $screen-lg-max) {
+        margin-top: 0;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        margin-top: -1px;
+      }
+
+      i {
+        font-weight: $fw-bold;
+        font-size: 16px;
+        color: $cl-black;
+      }
+
+      &.haru-accordion-icon-right {
+        float: right;
+        text-align: right;
+      }
+
+      &.haru-accordion-icon-left {
+        float: left;
+        text-align: left;
+      }
+    }
+
+    .haru-tab-content {
+      padding: 20px 20px 0 20px;
+      font-size: 16px;
+
+      @media screen and (max-width: $screen-md-max) {
+        font-size: $fs-base;
+      }
+    }
+  }
+
+  &--style-4 {
+    .haru-accordion-item {
+      padding-bottom: 30px;
+
+      &:last-child {
+        padding-bottom: 12px;
+      }
+    }
+
+    .haru-tab-title {
+      line-height: 1;
+      padding: 12px 0;
+      border-bottom: 1px solid $cl-border;
+
+      .haru-accordion-icon-opened {
+        display: none;
+      }
+
+      &.active {
+        border-bottom: 1px solid $cl-primary;
+
+        .haru-accordion-title {
+          color: $cl-primary;
+        }
+
+        .haru-accordion-icon {
+          i {
+            color: $cl-primary;
+          }
+        }
+
+        .haru-accordion-icon-closed {
+          display: none;
+        }
+
+        .haru-accordion-icon-opened {
+          display: inline-block;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .haru-accordion-title {
+      font-size: 18px;
+      color: $cl-black;
+      font-weight: $fw-bold;
+
+      @media screen and (max-width: $screen-lg-max) {
+        font-size: 17px;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $screen-sm-max) {
+
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        
+      }
+    }
+
+    .haru-accordion-icon {
+      width: 1.5em;
+      display: inline-block;
+      margin-top: 5px;
+
+      i {
+        font-weight: $fw-bold;
+        color: $cl-black;
+      }
+
+      &.haru-accordion-icon-right {
+        float: right;
+        text-align: right;
+      }
+
+      &.haru-accordion-icon-left {
+        float: left;
+        text-align: left;
+      }
+    }
+
+    .haru-tab-content {
+      padding-top: 15px;
+    }
+  }
+}
+
+#{$dark-mode},
+#{$background-dark} {
+  #{$root} {
+    &--style-1 {
+      .haru-tab-title {
+        border-bottom: 1px solid $cl-border-dark;
+      }
+
+      .haru-accordion-title {
+        color: $cl-white-dark;
+      }
+
+      .haru-accordion-icon {
+        i {
+          color: $cl-white-dark;
+        }
+      }
+    }
+
+  }
+}
+

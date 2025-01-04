@@ -1,0 +1,349 @@
+// Section Elementor
+.e-con,
+.e-container--row {
+  &.header-padding-2,
+  &.section-padding-2 {
+    padding-left: 2%;
+    padding-right: 2%;
+
+    @media screen and (max-width: ($screen-lg-max + 80) ) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    // Spacing from 1200px to 1440px
+    @media screen and (max-width: $screen-lg-max) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    // Spacing from 1200px to 1440px
+    @media screen and (max-width: $screen-ml-max) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.flex {
+  &--1 {
+    flex: 1!important;
+  }
+}
+
+.container-gap-75 > * + *,
+.container-gap-75 > .e-con-inner > * + * {
+  margin-left: 75px!important;
+
+  @media screen and (max-width: $screen-lg-max ) {
+    margin-left: 45px!important;
+  }
+
+  @media screen and (max-width: $screen-md-max ) {
+    margin-left: 30px!important;
+  }
+
+  @media screen and (max-width: $screen-sm-max ) {
+    margin-left: 20px!important;
+  }
+
+  @media screen and (max-width: $screen-xs-max ) {
+    margin-left: 0!important;
+  }
+}
+
+.container-gap-65 > * + *,
+.container-gap-65 > .e-con-inner > * + * {
+  margin-left: 65px!important;
+
+  @media screen and (max-width: $screen-lg-max ) {
+    margin-left: 40px!important;
+  }
+
+  @media screen and (max-width: $screen-md-max ) {
+    margin-left: 30px!important;
+  }
+
+  @media screen and (max-width: $screen-sm-max ) {
+    margin-left: 20px!important;
+  }
+
+  @media screen and (max-width: $screen-xs-max ) {
+    margin-left: 0!important;
+  }
+}
+
+.container-gap-75.section-pricing-4 > * + *,
+.container-gap-75.section-pricing-4 > .e-con-inner > * + * {
+  @media screen and (max-width: $screen-sm-max ) {
+    margin-left: 0!important;
+  }
+
+  @media screen and (max-width: $screen-xs-max ) {
+    margin-bottom: 0!important;
+  }
+}
+
+
+.container-gap-75 > *,
+.container-gap-75 > .e-con-inner > *,
+.container-gap-65 > *,
+.container-gap-65 > .e-con-inner > * {
+  @media screen and (max-width: $screen-xs-max ) {
+    margin-bottom: 20px!important;
+  }
+}
+
+.section-overflow-hidden {
+  overflow: hidden!important;
+}
+
+// Use for Banner
+.el-inline-block {
+  display: inline-block;
+  width: auto!important;
+}
+
+.btn-inline-block {
+  display: inline-block;
+  width: auto!important;
+
+  div {
+    display: inline-block;
+  }
+}
+
+// Section Background
+.section-bg-gradient-orange {
+  @include bggradient1();
+}
+
+.section-bg-gradient-orange-2 {
+  @include bggradient2();
+}
+
+.section-bg-gradient-purple {
+  background: linear-gradient(101.89deg, #828FF1 -38.66%, #CC91D7 2.29%, #978CF5 55.14%, #88D9F7 104.09%);
+}
+
+.section-bg-gradient-gray {
+  background: linear-gradient(269.88deg, #D4E3EE 6.75%, #FFF1F8 95.85%);
+}
+
+.section-bg-gradient-brown {
+  background: linear-gradient(269.88deg, #E4F4FF 6.75%, #FFF1F8 95.85%);
+}
+
+.section-bg-gradient-pet {
+  background: linear-gradient(90.07deg, #EAC645 -2.77%, #F2A173 17.57%, #97DEC0 49.15%, #6C87E6 59.32%, #CE4EEE 78.05%, #EF5B2C 100%);
+}
+
+.section-bg-gray {
+  background-color: $cl-gray;
+
+  &--border {
+    border-top: 1px solid $cl-gray-3;
+  }
+}
+
+.section-bg-gray-2 {
+  background-color: $cl-gray-2;
+}
+
+.section-bg-gray-3 {
+  background-color: $cl-gray-3;
+}
+
+.section-bg-gray-4 {
+  background-color: $cl-gray-4;
+}
+
+.section-bg-gray-5 {
+  background-color: $cl-gray-5;
+}
+
+.section-bg-primary {
+  background-color: $cl-primary;
+}
+
+.section-bg-secondary-light {
+  background-color: rgba($cl-secondary, .15);
+}
+
+.section-bg-secondary {
+  background-color: $cl-secondary;
+}
+
+.section-bg-secondary-light-2 {
+  background-color: lighten($cl-secondary, 10%);
+}
+
+.section-bg-secondary-dark {
+  background-color: darken($cl-secondary, 10%);
+}
+
+.section-bg-green-light {
+  background-color: #64cb9a;
+}
+
+.section-bg-green-light-2 {
+  background-color: #e5f4ed;
+}
+
+.section-bg-dark {
+  background-color: $cl-bg-dark;
+}
+
+.section-bg-dark-2 {
+  background-color: $cl-bg-dark-2;
+}
+
+.section-bg-decor-1 {
+  .elementor-widget-image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+//
+.section-rounded {
+  border-radius: $border-radius!important;
+
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    @include sftransition();
+  }
+}
+
+.section-rounded-20 {
+  border-radius: 20px!important;
+
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    @include sftransition();
+  }
+}
+
+.section-rounded-30 {
+  border-radius: 30px!important;
+
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    @include sftransition();
+  }
+}
+
+.section-rounded-extra-large {
+  border-radius: $border-radius-extra-large!important;
+
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    @include sftransition();
+  }
+}
+
+// 
+.section-shadow {
+  background: $cl-white;
+  box-shadow: 0px 10px 50px rgba($cl-black, .1);
+  border-radius: $border-radius;
+  transition: all .3s;
+}
+
+.section-shadow-2 {
+  background: $cl-white;
+  box-shadow: 0px 5px 20px rgba($cl-black, .06);
+  padding-left: 15px!important;
+  padding-right: 15px!important;
+  transition: all .3s;
+}
+
+.haru-header--sticky-on {
+  .section-shadow-2 {
+    box-shadow: none;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    transition: all .3s;
+
+    @media screen and (max-width: $screen-lg-max ) {
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+    }
+  }
+}
+
+.section-bg-rounded-2 {
+  border-radius: $border-radius-large!important;
+
+  @media screen and (max-width: $screen-lg-max - 30px ) {
+    border-radius: 0!important;
+  }
+}
+
+.section-bd-bottom {
+  border-bottom: 1px solid $cl-border;
+}
+
+// 
+.section-absolute-center {
+  position: absolute!important;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+// 
+.button-image {
+  a {
+    border-radius: $border-radius;
+    box-shadow: 0 0 10px rgba($cl-black, .07)!important;
+    transform: translateY(0);
+    transition: all .3s;
+
+    &:hover {
+      box-shadow: 0 15px 50px rgba($cl-black, .08)!important;
+      // transform: translateY(-1px);
+      transition: all .3s;
+    }
+  }
+}
+
+// #{$background-dark},
+#{$dark-mode} {
+  .section-bg-gray {
+    background-color: $cl-black;
+
+    &--border {
+      border-top: 1px solid $cl-border-2-dark;
+    }
+  }
+
+
+  .section-bd-bottom {
+    .elementor-container {
+
+      &:after {
+        background-color: $cl-border-2-dark;
+      }
+
+    }
+  }
+
+  .elementor-editor-active {
+    .section-grain-gray {
+      background-color: $cl-black;
+    }
+  }
+
+}

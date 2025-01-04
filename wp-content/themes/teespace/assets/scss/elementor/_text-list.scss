@@ -1,0 +1,159 @@
+$root: '.haru-text-list';
+
+#{$root} {
+  &__list {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    
+  }
+
+  .text-title {
+    font-size: 18px;
+    font-weight: $fw-medium;
+    color: $cl-black;
+
+    @media screen and(max-width: $screen-lg-max) {
+      font-size: 17px;
+    }
+
+    @media screen and(max-width: $screen-md-max) {
+      font-size: 16px;
+    }
+
+    @media screen and(max-width: $screen-xs-max) {
+      font-size: $fs-base;
+    }
+  }
+
+  .text-sub-title {
+    font-size: 15px;
+    font-weight: $fw-medium;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0 5px;
+
+    @media screen and(max-width: $screen-xs-max) {
+      font-size: 14px;
+    }
+  }
+
+  &--style-1 {
+    #{$root}__item {
+      display: flex;
+      margin-bottom: 15px;
+
+      @media screen and(max-width: $screen-lg-max) {
+        margin-bottom: 12px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        content: '\e925';
+        font-family: 'phosphor';
+        font-weight: $fw-bold;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $cl-bg-green;
+        color: $cl-green;
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        min-width: 32px;
+        text-align: center;
+
+        @media screen and (max-width: $screen-xs-max) {
+          font-size: 15px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          min-width: 30px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          font-size: 14px;
+          width: 28px;
+          height: 28px;
+          line-height: 28px;
+          min-width: 28px;
+        }
+      }
+
+      .text-title {
+        margin-left: 15px;
+
+        @media screen and (max-width: $screen-xs-max) {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  &--style-2 {
+    #{$root}__list {
+      text-align: center;
+    }
+
+    #{$root}__item {
+      display: inline-block;
+      margin: 0 12px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media screen and(max-width: $screen-xs-max) {
+        margin-bottom: 10px;
+      }
+
+      &:before {
+        content: '\e925';
+        font-family: 'phosphor';
+        font-weight: $fw-bold;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $cl-bg-green;
+        color: $cl-green;
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        margin-right: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#{$dark-mode},
+#{$background-dark} {
+  #{$root} {
+    .text-title {
+      color: $cl-white-dark;
+    }
+
+    .text-sub-title {
+      color: $cl-text-dark;
+    }
+
+    &--style-1 {
+      
+    }
+
+    &--style-2 {
+     
+    }
+  }
+}

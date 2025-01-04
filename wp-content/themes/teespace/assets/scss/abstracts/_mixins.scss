@@ -1,0 +1,80 @@
+// Placeholder text: https://github.com/twbs/bootstrap/pull/11526
+@mixin placeholder($color: $input-color-placeholder) {
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1; 
+  }
+
+  &:-ms-input-placeholder { 
+    color: $color; 
+  }
+
+  &::-webkit-input-placeholder { 
+    color: $color; 
+  }
+}
+
+// Scrollbar
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%), $border-radius: $border-radius) {
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+    border-radius: $border-radius;
+  }
+}
+
+// Safari Scale Radius
+@mixin sfradial() {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+@mixin sftransition() {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0)
+}
+
+// Gradient
+@mixin bggradient1() {
+  background: linear-gradient(101.31deg, $cl-gr-1 2.11%, $cl-gr-2 34.14%, $cl-gr-3 68.81%, $cl-gr-4 105.05%);
+}
+
+@mixin bggradient2() {
+  background: linear-gradient(101.31deg, $cl-gr-1 2.11%, $cl-gr-5 34.14%, $cl-gr-6 65.38%, $cl-gr-7 105.05%);
+}
+
+// Icon, Text Scroll
+@mixin bggradient3() {
+  // background: linear-gradient(260.31deg, #eec2fd 13.42%, #58d6b7 102.43%);
+  background: linear-gradient(260.31deg, rgba($cl-secondary, .6) 13.42%, rgba($cl-primary, .6) 102.43%);
+}
+
+@mixin bggradient31() {
+  background: linear-gradient(260.31deg, rgba($cl-secondary, .3) 13.42%, rgba($cl-primary, .3) 102.43%);
+}
+
+// Heading Topbar
+@mixin bggradient4() {
+  background: linear-gradient(101.31deg, #FF0C3E 2.11%, #E9563D 34.14%, #EF7740 65.38%, #FEDD68 105.05%);
+}
+
+// Heading Decoration
+@mixin headinggradient1() {
+  background: linear-gradient(101.31deg, $cl-hd-1 2.11%, $cl-hd-2 105.05%);
+}
+

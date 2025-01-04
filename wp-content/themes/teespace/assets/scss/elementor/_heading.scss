@@ -1,0 +1,1341 @@
+$root: '.haru-heading-title';
+
+#{$root} {
+  @media screen and (max-width: $screen-md-max) {
+
+  }
+
+  &--topbar-1 {
+    font-size: 18px;
+    font-weight: $fw-bold;
+    margin: 0;
+
+    @media screen and(max-width: $screen-lg-max) {
+      font-size: 16px;
+    }
+
+    @media screen and(max-width: $screen-md-max) {
+
+    }
+
+    @media screen and(max-width: $screen-sm-max) {
+      font-size: $fs-base;
+    }
+  }
+
+  &--topbar-2 {
+    color: $cl-secondary;
+    font-size: $fs-base;
+    font-weight: $fw-bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+
+    @media screen and(max-width: $screen-xs-max) {
+      font-size: $fs-base - 1px;
+    }
+
+    a {
+      color: $cl-text;
+    }
+
+    i {
+      font-size: 20px;
+      margin-right: 8px;
+      position: relative;
+      bottom: -3px;
+    }
+  }
+
+  &--topbar-3 {
+    color: $cl-black;
+    font-size: $fs-base;
+    font-weight: $fw-medium;
+    margin: 0;
+
+    @media screen and(max-width: $screen-lg-max) {
+
+    }
+
+    @media screen and(max-width: $screen-md-max) {
+
+    }
+
+    @media screen and(max-width: $screen-sm-max) {
+
+    }
+
+    @media screen and(max-width: $screen-xs-max) {
+
+    }
+
+    a {
+      color: $cl-text;
+    }
+
+    i {
+      font-size: 20px;
+      margin-right: 8px;
+      position: relative;
+      bottom: -3px;
+    }
+  }
+
+  &--menu-1 {
+    font-size: Max(15px, $fs-base);
+    font-weight: $fw-bold;
+    margin: 0;
+
+    span {
+      color: $cl-primary;
+    }
+
+    a {
+
+    }
+
+    i {
+      position: relative;
+      bottom: -1px;
+      font-weight: $fw-bold;
+    }
+  }
+
+  &--menu-2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @media screen and(max-width: $screen-lg-max) {
+      font-size: 17px;
+    }
+
+    @media screen and(max-width: $screen-md-max) {
+      font-size: 16px;
+    }
+  }
+
+
+  &--footer-1 {
+    color: $cl-heading;
+    font-size: 20px;
+
+    @media screen and(max-width: $screen-lg-max) {
+      font-size: 18px;
+    }
+
+    @media screen and(max-width: $screen-md-max) {
+
+    }
+
+    @media screen and(max-width: $screen-sm-max) {
+
+    }
+
+    @media screen and(max-width: $screen-xs-max) {
+
+    }
+
+    span {
+      color: $cl-primary;
+      font-size: 16px;
+      font-weight: $fw-normal;
+      margin-left: 8px;
+      position: relative;
+      top: -2px;
+
+      @media screen and(max-width: $screen-lg-max) {
+        font-size: Max(15px, $fs-base);
+      }
+
+      @media screen and(max-width: $screen-md-max) {
+
+      }
+    }
+  }
+
+  &--footer-2 {
+    color: $cl-heading;
+    font-size: 22px;
+
+    @media screen and(max-width: $screen-lg-max) {
+      font-size: 20px;
+    }
+
+    @media screen and(max-width: $screen-md-max) {
+      font-size: 18px;
+    }
+
+    @media screen and(max-width: $screen-sm-max) {
+
+    }
+
+    @media screen and(max-width: $screen-xs-max) {
+
+    }
+
+    span {
+      color: $cl-primary;
+      font-size: 16px;
+      font-weight: $fw-normal;
+      margin-left: 8px;
+      position: relative;
+      top: -2px;
+
+      @media screen and(max-width: $screen-lg-max) {
+        font-size: Max(15px, $fs-base);
+      }
+
+      @media screen and(max-width: $screen-md-max) {
+
+      }
+    }
+  }
+
+  &--footer-3 {
+    color: $cl-heading;
+    font-size: 16px;
+    font-weight: $fw-normal;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $screen-md-max) {
+
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+
+    }
+  }
+
+  &--footer-4 {
+    color: $cl-heading;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+
+    }
+  }
+
+  &--footer-text-1 {
+    color: $cl-text;
+    font-size: $fs-base;
+    font-weight: $fw-medium;
+    line-height: 1.8;
+
+    @media screen and (max-width: $screen-md-max) {
+
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+
+    }
+  }
+
+  &--footer-copyright-1 {
+    font-size: 16px;
+    font-weight: $fw-normal;
+    color: $cl-text;
+    margin: 0;
+
+    @media screen and (max-width: $screen-md-max) {
+
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: $fs-base;
+    }
+  }
+
+  &--footer-copyright-2 {
+    font-size: $fs-base;
+    font-weight: $fw-normal;
+    color: $cl-text;
+    margin: 0;
+
+    @media screen and (max-width: $screen-lg-max) {
+      
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+
+    }
+  }
+
+  &--notice-1 {
+    font-size: Max(14px, $fs-base);
+    font-weight: $fw-semi-bold;
+    margin: 0;
+    border-radius: $border-radius-small;
+    color: $cl-green;
+    background-color: rgba($cl-green, .1);
+    display: inline-block;
+    padding: 6px 13px;
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: Max(13px, $fs-base - 1px);
+      padding: 5px 10px;
+    }
+  }
+
+  &--description-1 {
+    font-size: 20px;
+    color: $cl-text;
+    font-weight: $fw-normal;
+    line-height: 1.6;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 17px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: $fs-base;
+    }
+  }
+
+  &--description-2 {
+    font-size: 18px;
+    color: $cl-text;
+    font-weight: $fw-normal;
+    line-height: 1.8;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 17px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: $fs-base;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+
+    }
+  }
+
+  &--description-3 {
+    font-size: 16px;
+    color: $cl-text;
+    font-weight: $fw-normal;
+    line-height: 1.8;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: $fs-base;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      
+    }
+  }
+
+  &--heading-1 {
+    font-size: 64px;
+    font-weight: $fw-bold;
+    line-height: 1.15;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 48px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 24px;
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 100%;
+        height: 15px;
+        background-color: rgba($cl-primary, .3);
+
+        @include headinggradient1();
+        
+        z-index: -1;
+
+        @media screen and (max-width: $screen-lg-max) {
+          bottom: 3px;
+          height: 12px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          bottom: 3px;
+          height: 8px;
+        }
+      }
+    }
+  }
+
+  &--heading-2 {
+    font-size: 48px;
+    line-height: 1.25;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 24px;
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 100%;
+        height: 15px;
+        background-color: rgba($cl-primary, .3);
+
+        @include headinggradient1();
+
+        z-index: -1;
+
+        @media screen and (max-width: $screen-lg-max) {
+          bottom: 3px;
+          height: 12px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          bottom: 3px;
+          height: 8px;
+        }
+      }
+    }
+  }
+
+  &--heading-3 {
+    font-size: 24px;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 16px;
+    }
+  }
+
+  &--heading-4 {
+    font-size: 72px;
+    line-height: 1.15;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 62px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 52px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 32px;
+      text-align: left;
+    }
+  }
+
+  &--heading-5 {
+    font-size: 40px;
+    line-height: 1.15;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 24px;
+    }
+  }
+
+  &--heading-6 {
+    font-size: 48px;
+    line-height: 1.15;
+
+    &.font__secondary {
+      font-weight: $fw-normal;
+    }
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 24px;
+    }
+  }
+
+  &--heading-7 {
+    font-size: 28px;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 18px;
+    }
+  }
+
+  &--heading-8 {
+    font-size: 20px;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+
+    }
+  }
+
+  &--heading-9 {
+    font-size: 40px;
+    line-height: 1.3;
+    margin-top: 15px;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 24px;
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 100%;
+        height: 15px;
+        background-color: rgba($cl-primary, .3);
+
+        @include headinggradient1();
+
+        z-index: -1;
+
+        @media screen and (max-width: $screen-lg-max) {
+          bottom: 3px;
+          height: 12px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          bottom: 3px;
+          height: 8px;
+        }
+      }
+    }
+  }
+
+  &--heading-10 {
+    font-family: $font-secondary;
+    font-size: 64px;
+    font-weight: $fw-normal;
+    color: $cl-gray;
+    line-height: 1;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 48px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 32px;
+    }
+
+    span {
+      font-size: 165%;
+    }
+
+    &#{$root} {
+      &--sub-size {
+        &-medium {
+          font-size: 96px;
+
+          @media screen and (max-width: $screen-lg-max) {
+            font-size: 80px;
+          }
+
+          @media screen and (max-width: $screen-md-max) {
+            font-size: 72px;
+          }
+
+          @media screen and (max-width: $screen-sm-max) {
+            font-size: 56px;
+          }
+
+          @media screen and (max-width: $screen-xs-max) {
+            font-size: 36px;
+          }
+        }
+
+        &-large {
+          font-size: 110px;
+
+          @media screen and (max-width: $screen-lg-max) {
+            font-size: 96px;
+          }
+
+          @media screen and (max-width: $screen-md-max) {
+            font-size: 80px;
+          }
+
+          @media screen and (max-width: $screen-sm-max) {
+            font-size: 72px;
+          }
+
+          @media screen and (max-width: $screen-xs-max) {
+            font-size: 64px;
+          }
+        }
+      }
+    }
+  }
+
+  &--heading-11 {
+    font-size: 48px;
+    font-weight: $fw-extra-bold;
+    line-height: 1.2;
+    letter-spacing: .05rem;
+    position: relative;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 26px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 22px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100px;
+      background-color: $cl-primary;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+
+      @media screen and (max-width: $screen-lg-max) {
+        height: 3px;
+        width: 90px;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        height: 2px;
+        width: 80px;
+      }
+    }
+
+    &#{$root} {
+      &--align-center {
+        &:before {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      &--align-left {
+        &:before {
+          left: 0;
+        }
+      }
+
+      &--align-right {
+        &:before {
+          right: 0;
+        }
+      }
+
+      // Tablet
+      &--align-tablet-center {
+        &:before {
+          @media screen and (max-width: 1024px) {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+
+      &--align-tablet-left {
+        &:before {
+          @media screen and (max-width: 1024px) {
+            left: 0;
+            transform: none;
+          }
+        }
+      }
+
+      &--align-tablet-right {
+        &:before {
+          @media screen and (max-width: 1024px) {
+            right: 0;
+            transform: none;
+          }
+        }
+      }
+
+      // Mobile
+      &--align-mobile-center {
+        &:before {
+          @media screen and (max-width: 767px) {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+
+      &--align-mobile-left {
+        &:before {
+          @media screen and (max-width: 767px) {
+            left: 0;
+            transform: none;
+          }
+        }
+      }
+
+      &--align-mobile-right {
+        &:before {
+          @media screen and (max-width: 767px) {
+            right: 0;
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+
+  &--heading-12 {
+    font-size: 72px;
+    font-weight: $fw-extra-bold;
+    line-height: 1.2;
+    position: relative;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 64px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 56px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 36px;
+    }
+  }
+
+  &--heading-13 {
+    font-family: $font-secondary;
+    font-size: 40px;
+    font-weight: $fw-normal;
+    color: $cl-gray;
+    line-height: 1;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 24px;
+    }
+  }
+
+  // Sub Heading
+  &--sub-heading-1 {
+    color: $cl-secondary;
+    background-color: rgba($cl-secondary, .15);
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    padding: 8px 18px;
+    border-radius: $border-radius-e-extra-large;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 17px;
+      padding: 6px 18px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: $fs-base;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      
+    }
+
+    .haru-star {
+      position: absolute;
+      left: calc(100% + 10px);
+      top: 6px;
+      
+      &:before {
+        font-size: 24px;
+        color: $cl-star;
+        font-family: 'phosphor';
+        letter-spacing: 3px;
+        position: relative;
+        top: -3px;
+
+        @media screen and (max-width: $screen-lg-max) {
+          font-size: 20px;
+          top: -2px;
+        }
+
+        @media screen and (max-width: $screen-md-max) {
+          font-size: 19px;
+          top: -2px;
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+          font-size: 18px;
+          top: -1px;
+        }
+      }
+
+      &--5 {
+        &:before {
+          content: '\e96c \e96c \e96c \e96c \e96c';
+        }
+      }
+
+      &--4 {
+        &:before {
+          content: '\e96c \e96c \e96c \e96c';
+        }
+      }
+
+      &--3 {
+        &:before {
+          content: '\e96c \e96c \e96c';
+        }
+      }
+
+      &--2 {
+        &:before {
+          content: '\e96c \e96c';
+        }
+      }
+
+      &--2 {
+        &:before {
+          content: '\e96c';
+        }
+      }
+    }
+  }
+
+  &--sub-heading-2 {
+    color: $cl-secondary;
+    font-size: $fs-base - 1px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 16px;
+    }
+  }
+
+  &--sub-heading-3 {
+    font-size: $fs-base - 1px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $screen-lg-max) {
+
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+
+    }
+
+    i {
+      font-size: 24px;
+      position: relative;
+      bottom: -5px;
+      margin-right: 8px;
+    }
+
+    svg {
+      max-height: 24px;
+      max-width: 24px;
+      position: relative;
+      bottom: -5px;
+      margin-right: 8px;
+    }
+
+    i,
+    svg path {
+      color: $cl-primary;
+      fill: $cl-primary;
+    }
+  }
+
+  &--sub-heading-4 {
+    font-size: 24px;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 16px;
+    }
+  }
+
+  &--sub-heading-5 {
+    font-size: 18px;
+    font-weight: $fw-medium;
+    line-height: 1.8;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 17px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 16px;
+    }
+  }
+
+  &--sub-heading-6 {
+    font-size: 18px;
+    font-weight: $fw-bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 17px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: Max(15px, $fs-base);
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: Max(14px, $fs-base);
+    }
+
+    span {
+      display: inline-block;
+      background-color: $cl-primary;
+      border-radius: $border-radius-small;
+      color: $cl-white;
+      padding: 0 11px;
+      letter-spacing: normal;
+    }
+  }
+
+  &--sub-heading-7 {
+    font-size: 18px;
+    font-weight: $fw-medium;
+    color: $cl-text;
+  }
+
+  &--sub-heading-8,
+  &--sub-heading-11 {
+    &.font__secondary {
+      font-size: 24px;
+      font-weight: $fw-normal;
+      font-style: italic;
+
+      @media screen and (max-width: $screen-lg-max) {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: $screen-sm-max) {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        font-size: 16px;
+      }
+    }
+  }
+
+   &--sub-heading-9 {
+    font-style: italic;
+    font-size: 36px;
+    margin-bottom: 0;
+    line-height: 1;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 26px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 20px;
+    }
+   }
+
+   &--sub-heading-10 {
+    font-size: 24px;
+    font-weight: $fw-semi-bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: Max(14px, $fs-base);
+    }
+  }
+
+  &--sub-heading-11 {
+    line-height: 1.6;
+  }
+
+  &--landing-1 {
+    font-size: 120px;
+    font-weight: $fw-extra-bold;
+    color: $cl-primary;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 100px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 80px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 60px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 50px;
+    }
+
+    span {
+      font-size: 80px;
+      line-height: 1;
+      position: absolute;
+      top: 20%;
+      left: auto;
+      padding-left: 5px;
+
+      @media screen and (max-width: $screen-lg-max) {
+        font-size: 70px;
+      }
+
+      @media screen and (max-width: $screen-md-max) {
+        font-size: 60px;
+      }
+
+      @media screen and (max-width: $screen-sm-max) {
+        font-size: 50px;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &--landing-2 {
+    font-size: 56px;
+    font-family: $font-secondary;
+    font-weight: $fw-normal;
+    color: $cl-primary;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 24px;
+    }
+  }
+
+  &--landing-3 {
+    color: $cl-white;
+    font-size: 72px;
+    line-height: 1.15;
+    text-shadow: 4px 2px 0 #8322CF;
+
+    @media screen and (max-width: $screen-lg-max) {
+      font-size: 62px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      font-size: 52px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 32px;
+    }
+  }
+
+  // Mega Menu Heading
+  &--menu-heading-1 {
+    font-size: 18px;
+  }
+
+  &--single-heading-1 {
+    font-size: 16px;
+    text-transform: uppercase;
+
+    @media screen and(max-width: $screen-lg-max) {
+
+    }
+
+    @media screen and(max-width: $screen-md-max) {
+      font-size: Max(15px, $fs-base);
+    }
+
+    @media screen and(max-width: $screen-sm-max) {
+      font-size: Max(14px, $fs-base);
+      margin-bottom: 5px;
+    }
+
+    @media screen and(max-width: $screen-xs-max) {
+      margin-bottom: 0;
+    }
+  }
+
+  // Specia;
+  .heading-separator {
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    margin: 0 15px;
+    background-color: $cl-white;
+    position: relative;
+    bottom: -6px;
+  }
+}
+
+#{$dark-mode},
+#{$background-dark} {
+  #{$root} {
+   &--sub-heading-1 {
+     color: $cl-secondary;
+     background-color: $cl-white-dark;
+    }
+
+    &--footer-text-1 {
+      color: $cl-text-2-dark;
+    }
+
+    &--footer-copyright-1 {
+      color: $cl-text-2-dark;
+    }
+  }
+}

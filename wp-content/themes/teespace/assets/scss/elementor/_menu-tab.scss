@@ -1,0 +1,166 @@
+$root: '.haru-menu-tab';
+
+#{$root} {
+
+  ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    li {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .top-icon {
+      li {
+        flex-wrap: wrap;
+      }
+
+      #{$root}__title {
+        flex: 1 1 100%;
+        line-height: 1;
+      }
+    }
+  }
+
+  #{$root}__content {
+    .active-default,
+    .active {
+      display: block;
+      width: 100%;
+      opacity: 1;
+      animation: fadeIn linear .3s;
+    }
+
+    > div,
+    .inactive {
+      display: none;
+    }
+  }
+
+  &--horizontal,
+  &--vertical {
+
+  }
+
+  &--horizontal {
+    #{$root}__nav {
+      li {
+
+      }
+    }
+
+    #{$root}__content {
+      .active-default,
+      .active {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  &--vertical {
+    display: flex;
+
+    #{$root}__nav {
+      flex: 0 0 20%;
+      width: 20%;
+      min-width: 250px;
+    }
+
+    #{$root}__nav > ul {
+      flex-flow: column wrap;
+
+      li {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    }
+
+    #{$root}__content {
+      flex: 0 0 80%;
+      width: 80%;
+
+      .active-default,
+      .active {
+        padding: 0 0 0 20px;
+      }
+    }
+
+    &#{$root}--style-1 {
+      #{$root}__nav {
+        background-color: $cl-gray-3;
+      }
+    }
+  }
+
+  &--style-1 {
+    #{$root}__nav {
+      li {
+        background-color: $cl-gray-3;
+        padding: 15px 20px;
+
+        &.active-default,
+        &.active,
+        &:hover {
+          background-color: $cl-primary;
+          color: $cl-white;
+
+          svg path {
+            fill: $cl-white!important;
+          }
+        }
+      }
+
+      img,
+      i,
+      svg {
+        width: 16px;
+        margin-right: 10px;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+
+      .top-icon {
+        img,
+        i,
+        svg {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    #{$root}__icon {
+      display: flex;
+      font-size: 18px;
+    }
+
+    #{$root}__title {
+      font-weight: $fw-bold;
+      font-size: $fs-base;
+    }
+  }
+
+  &--style-2 {
+
+  }
+}

@@ -1,0 +1,164 @@
+/*-----------------------------------
+ * 9.1. WCFM
+ *-----------------------------------*/
+
+.wcfm-theme-teespace {
+  .wcfm-membership-wrapper {
+    border-radius: $border-radius;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: $screen-lg-max) {
+      margin-bottom: 80px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      // margin-bottom: 20px;
+    }
+  }
+
+  #wcfm_membership_container {
+    input[type="text"], 
+    input[type="file"], 
+    input[type="password"], 
+    select, 
+    input[type="number"], 
+    input[type="time"], 
+    input[type="search"], 
+    textarea {
+      border: 1px solid $cl-border!important;
+      box-shadow: none;
+      border-radius: $border-radius;
+
+      &:focus {
+        border: 1px solid $cl-primary!important;
+      }
+
+      &.wcfm_validation_success {
+        border-left: 6px solid blue!important;
+      }
+
+      &.wcfm_validation_failed {
+        border-left: 6px solid red!important;
+      }
+    }
+
+    input.wcfm_submit_button,
+    a.wcfm_submit_button {
+      background-color: $cl-primary;
+      color: $cl-white;
+      padding: 0 35px!important;
+      box-shadow: none;
+      height: $e-height-base;
+      line-height: $e-height-base;
+      letter-spacing: inherit;
+      border-radius: $border-radius;
+      font-weight: $fw-bold;
+      text-transform: capitalize;
+      border: none;
+
+      &:hover {
+        background-color: darken($cl-primary, 5%);
+      }
+    }
+
+    .wcfm_store_slug_status {
+      color: #008C00;
+    }
+  }
+
+  .wcfm-error,
+  .wcfm-info,
+  .wcfm-success,
+  .wcfm-validation,
+  .wcfm-warning,
+  .wcfm-wcfmu {
+    border-radius: $border-radius;
+  }
+
+  .wcfm-error {
+    color: red;
+  }
+
+  .wcicon-status-cancelled {
+    color: red;
+  }
+
+  #password_strength {
+    &.short {
+
+    }
+
+    &.weak {
+      
+    }
+
+    &.good {
+
+    }
+
+    &.strong {
+
+    }
+  }
+
+  // wcfm/vendor-register/?vmstep=thankyou
+  #wcfm-main-contentainer {
+    .wcfm_membership_thankyou_content_wrapper {
+      background-color: $cl-primary;
+      border-radius: $border-radius;
+      color: $cl-white;
+      padding: 25px;
+      padding-bottom: 50px;
+    }
+
+    .wcfm_membership_thankyou_content {
+
+    }
+  }
+
+  // my-account (logged in)
+  .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--wcfm-store-manager a:before {
+    font-weight: $fw-medium;
+    margin-right: 5px;
+  }
+}
+
+.wcfmmp_become_vendor_link {
+  margin-bottom: 8px;
+
+  a {
+    color: $cl-primary;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// wcfm/vendor-register/
+.wcfm_registration_form_heading {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+#wcfm_membership_container {
+  #wcfm_membership_registration_form {
+    p.wcfm_title,
+    span.wcfm_title {
+      strong {
+        font-style: normal;
+        color: $cl-black;
+      } 
+    }
+  }
+}
+
+// wcfm/store-manager/

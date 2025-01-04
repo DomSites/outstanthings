@@ -1,0 +1,261 @@
+$root: '.haru-tab';
+
+#{$root} {
+
+  ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    li {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .top-icon {
+      li {
+        flex-wrap: wrap;
+      }
+
+
+      #{$root}__title {
+        flex: 1 1 100%;
+        line-height: 1;
+      }
+      
+    }
+  }
+
+  #{$root}__content {
+    .active-default,
+    .active {
+      display: block;
+      width: 100%;
+      opacity: 1;
+      animation: fadeIn linear .3s;
+    }
+
+    > div,
+    .inactive {
+      display: none;
+    }
+  }
+
+  &--horizontal,
+  &--vertical {
+
+  }
+
+  &--horizontal {
+    #{$root}__nav {
+      li {
+
+      }
+    }
+
+    #{$root}__content {
+      .active-default,
+      .active {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  &--vertical {
+    display: flex;
+
+    #{$root}__nav {
+      flex: 0 0 auto;
+    }
+
+    #{$root}__nav > ul {
+      flex-flow: column wrap;
+
+      li {
+        width: 100%;
+        justify-content: start;
+      }
+    }
+  }
+
+  &--style-1 {
+    #{$root}__nav {
+      li {
+        background-color: $cl-gray-3;
+        padding: 15px 20px;
+
+        &.active-default,
+        &.active,
+        &:hover {
+          background-color: $cl-primary;
+          color: $cl-white;
+
+          svg path {
+            fill: $cl-white!important;
+          }
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          flex: 0 0 100%;
+          margin: 0 0 10px;
+        }
+      }
+
+      img,
+      i,
+      svg {
+        width: 16px;
+        margin-right: 10px;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+
+      .top-icon {
+        img,
+        i,
+        svg {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    #{$root}__icon {
+      display: flex;
+      font-size: 18px;
+    }
+
+    #{$root}__title {
+      font-weight: $fw-bold;
+      font-size: $fs-base;
+    }
+  }
+
+  &--style-2 {
+    #{$root}__nav {
+      margin: 0 -15px;
+
+      @media screen and (max-width: $screen-sm-max) {
+        margin: 0 -10px;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        margin: 0;
+      }
+
+      ul {
+        @media screen and (max-width: $screen-sm-max) {
+          flex-wrap: wrap;
+        }
+      }
+
+      li {
+        border: 2px solid $cl-border;
+        border-radius: $border-radius;
+        margin: 0 15px;
+        padding: 15px 20px;
+        transition: all .3s;
+
+        @media screen and (max-width: $screen-lg-max) {
+          padding: 12px 18px;
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+          flex: 0 0 calc(50% - 20px);
+          margin: 0 10px 20px 10px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          flex: 0 0 100%;
+          margin: 0 0 10px;
+        }
+
+        &.active-default,
+        &.active,
+        &:hover {
+          background-color: $cl-white;
+          border: 2px solid $cl-white;
+          color: $cl-black;
+          box-shadow: 0 15px 50px rgba($cl-black, .08);
+          transition: all .3s;
+
+          svg path {
+            fill: $cl-white!important;
+          }
+        }
+      }
+
+      img,
+      i,
+      svg {
+        width: 16px;
+        margin-right: 10px;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+
+      .top-icon {
+        img,
+        i,
+        svg {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    #{$root}__content {
+      margin-left: -15px;
+      margin-right: -15px;
+
+      .active-default,
+      .active {
+        padding: 45px 0 20px 0;
+
+        @media screen and(max-width: $screen-lg-max) {
+          padding: 35px 0 20px 0;
+        }
+
+        @media screen and(max-width: $screen-sm-max) {
+          padding: 10px 0 10px 0;
+        }
+      }
+    }
+
+    #{$root}__title {
+      font-size: 18px;
+      font-weight: $fw-bold;
+
+      @media screen and(max-width: $screen-lg-max) {
+        font-size: 17px;
+      }
+
+      @media screen and(max-width: $screen-md-max) {
+        font-size: 16px;
+      }
+
+      @media screen and(max-width: $screen-sm-max) {
+        font-size: $fs-base;
+      }
+    }
+  }
+}

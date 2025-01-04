@@ -1,0 +1,291 @@
+$root: '.haru-banner-creative';
+
+#{$root} {
+  position: relative;
+
+  &--shadow {
+    &-yes {
+      #{$root}__image {
+        box-shadow: 0 20px 70px rgba($cl-black, .15);
+      }
+    }
+  }
+
+  &__hover {
+    &-overlay {
+      #{$root}__image {
+        position: relative;
+        overflow: hidden;
+
+        @media only screen and (min--moz-device-pixel-ratio: 2),
+          only screen and (-o-min-device-pixel-ratio: 2/1),
+          only screen and (-webkit-min-device-pixel-ratio: 2),
+          only screen and (min-device-pixel-ratio: 2) {
+          @include sfradial();
+        }
+
+        a {
+          display: flex;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($cl-black, $opacity-over);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            transition: all .3s;
+          }
+        }
+
+        &:hover {
+          a {
+            &:before {
+              opacity: 1;
+              visibility: visible;
+              transition: all .3s;
+            }
+          }
+        }
+      }
+    }
+
+    &-scale {
+      #{$root}__image {
+        position: relative;
+        overflow: hidden;
+
+        @media only screen and (min--moz-device-pixel-ratio: 2),
+          only screen and (-o-min-device-pixel-ratio: 2/1),
+          only screen and (-webkit-min-device-pixel-ratio: 2),
+          only screen and (min-device-pixel-ratio: 2) {
+          @include sfradial();
+        }
+
+        a {
+          display: flex;
+        }
+
+        img {
+          transform: scale(1);
+          transition: all .5s;
+        }
+
+        &:hover {
+          img {
+            transform: scale($scale-ratio);
+            transition: all .5s;
+          }
+        }
+      }
+    }
+
+    &-over-scale {
+      #{$root}__image {
+        position: relative;
+        overflow: hidden;
+
+        @media only screen and (min--moz-device-pixel-ratio: 2),
+          only screen and (-o-min-device-pixel-ratio: 2/1),
+          only screen and (-webkit-min-device-pixel-ratio: 2),
+          only screen and (min-device-pixel-ratio: 2) {
+          @include sfradial();
+        }
+
+        a {
+          display: flex;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($cl-black, $opacity-over);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            transition: all .3s;
+          }
+        }
+
+        img {
+          transform: scale(1);
+          transition: all .5s;
+        }
+
+        &:hover {
+          a {
+            &:before {
+              opacity: 1;
+              visibility: visible;
+              transition: all .3s;
+            }
+          }
+
+          img {
+            transform: scale($scale-ratio);
+            transition: all .5s;
+          }
+        }
+      }
+    }
+  }
+
+  &--creative {
+    #{$root}__list {
+      padding: 0;
+      margin: 0 calc(-5% - 15px);
+      list-style: none;
+      display: flex;
+
+      @media screen and(max-width: $screen-lg-max) {
+        margin: 0 calc(-5% - 10px);
+      }
+
+      @media screen and(max-width: $screen-sm-max) {
+        margin: 0 calc(-35% - 10px);
+      }
+
+      @media screen and(max-width: $screen-xs-max) {
+        margin: 0 calc(-55% - 10px);
+      }
+    }
+
+    #{$root}__item {
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media screen and(max-width: $screen-lg-max) {
+        padding: 0 10px;
+      }
+
+      @media screen and(max-width: $screen-md-max) {
+        padding: 0 5px;
+      }
+
+      @media screen and(max-width: $screen-xs-max) {
+
+      }
+
+      &:nth-child(4) {
+        flex: 0 0 18.3%;
+      }
+    }
+
+    #{$root}__image {
+      border-radius: $border-radius;
+      margin-bottom: 30px;
+
+      @media screen and(max-width: $screen-lg-max) {
+        margin-bottom: 20px;
+      }
+
+      @media screen and(max-width: $screen-md-max) {
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .gallery-popup-link {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      img {
+        width: 100%;
+        border-radius: $border-radius;
+      }
+    }
+  }
+
+  &--slick {
+    .slick-track {
+      display: flex!important;
+    }
+
+    .slick-slide {
+      height: inherit!important;
+      display: flex;
+      align-items: center;
+      transition: all .5s;
+
+      > div {
+        display: flex;
+      }
+
+      &:not(.slick-center) {
+        // transform: scale(.73);
+        transition: all .5s;
+      }
+    }
+
+    #{$root}__list {
+      margin: 0 -15px;
+
+      @media screen and(max-width: $screen-xs-max) {
+        margin: 0 -8px;
+        max-width: calc(100vw - 16px);
+      }
+
+      @media screen and(max-width: $screen-xs-max) {
+        max-width: calc(100vw - 0px);
+      }
+    }
+
+    #{$root}__item {
+      padding: 0 15px;
+
+      @media screen and(max-width: $screen-xs-max) {
+        padding: 0 8px;
+      }
+    }
+
+    #{$root}__image {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      img {
+        width: 100%;
+        border-radius: $border-radius;
+      }
+    }
+
+    .slick-next {
+      right: 10px;
+
+      @media screen and(max-width: $screen-xs-max) {
+        right: 8px;
+      }
+    }
+
+    .slick-prev {
+      left: 10px;
+
+      @media screen and(max-width: $screen-xs-max) {
+        left: 8px;
+      }
+    }
+  }
+
+}
+
+#{$dark-mode},
+#{$background-dark} {
+  #{$root} {
+
+  }
+}
+
